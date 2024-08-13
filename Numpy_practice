@@ -1,0 +1,65 @@
+import numpy as np
+
+lista = [9,55,32,77,10,52,81]
+
+print( lista)
+print( type(lista))
+
+array_nros = np.array(lista)
+
+print( array_nros )
+print( type(array_nros))
+
+lista_numeros = [[10,9,7] ,[60,50,40]]
+print(lista_numeros)
+print()
+
+matriz_numeros = np.array(lista_numeros)
+print(matriz_numeros)
+print(type(matriz_numeros))
+
+matriz_test = np.array( [ [1,2,3,4,5], [20,30,40,50,60], [11,12,13,14,15] , [60,61,62,63,64] ] )
+
+print(matriz_test)
+
+#Exploring an array atributtes
+matriz_numeros = np.array([[10,9,7] ,[60,50,40]])
+
+print(matriz_numeros.size)
+print(matriz_numeros.shape)
+print(matriz_numeros.dtype)
+print(matriz_numeros.ndim)
+
+matriz = np.array([(8, 9, 10), (11, 12, 13)])
+print(matriz)
+
+matriz2 = matriz.reshape(3,2)
+print(matriz2)
+
+[[ 8  9 10]
+ [11 12 13]]
+
+[[ 8  9]
+ [10 11]
+ [12 13]]
+
+matriz_numeros = np.array([[10,9,7] ,[60,50,40]])
+
+matriz_dos = matriz_numeros.reshape(3,2)
+
+print(matriz_numeros)
+print()
+print(matriz_dos)
+
+#Changing data types
+array1 = np.array([[1,2,3,4],[5,6,7,8]], dtype=np.float64)
+array2 = np.array([[1.5, 2.3, 3.56, 4.88],[5.2, 6.85, 7.25, 8.3]],dtype=np.int64)
+
+a = np.array(['0', '0', '1', '1', '0'])  # Cadena Unicode (str)
+print(a)  # ['0' '0' '1' '1' '0']
+a.dtype  # dtype('<U1')
+
+a = np.array([False, False, True, True, False])  # Booleano (bool)
+print(a)  # [False False  True  True False]
+a.dtype  # dtype('bool')
+
